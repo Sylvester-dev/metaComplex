@@ -1,0 +1,65 @@
+{
+  "display": {
+    "title": "gg",
+    "favicon": "favicon_asset",
+    "navmapThumbnail": "scene-thumbnail.png"
+  },
+  "owner": "",
+  "contact": {
+    "name": "author-name",
+    "email": ""
+  },
+  "main": "bin/game.js",
+  "tags": [],
+  "scene": {
+    "parcels": [
+      "0,0",
+      "0,1",
+      "0,2",
+      "0,3",
+      "1,0",
+      "1,1",
+      "1,2",
+      "1,3",
+      "2,0",
+      "2,1",
+      "2,2",
+      "2,3",
+      "3,0",
+      "3,1",
+      "3,2",
+      "3,3",
+      "4,0",
+      "4,1",
+      "4,2",
+      "4,3",
+      "5,0",
+      "5,1",
+      "5,2",
+      "5,3",
+      "6,0",
+      "6,1",
+      "6,2",
+      "6,3",
+      "7,0",
+      "7,1",
+      "7,2",
+      "7,3"
+    ],
+    "base": "0,0"
+  },
+  "source": {
+    "version": 1,
+    "origin": "builder",
+    "projectId": "a3a45f6e-5372-4012-b6ca-914670e61fc3",
+    "point": {
+      "x": 0,
+      "y": 0
+    },
+    "rotation": "east",
+    "layout": {
+      "rows": 8,
+      "cols": 4
+    }
+  }
+}
