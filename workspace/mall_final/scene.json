@@ -1,0 +1,63 @@
+{
+  "display": {
+    "title": "mall_final",
+    "favicon": "favicon_asset",
+    "navmapThumbnail": "scene-thumbnail.png"
+  },
+  "owner": "",
+  "contact": {
+    "name": "Donkey",
+    "email": ""
+  },
+  "main": "bin/game.js",
+  "tags": [],
+  "scene": {
+    "parcels": [
+      "8,0",
+      "8,1",
+      "8,2",
+      "8,3",
+      "8,4",
+      "9,0",
+      "9,1",
+      "9,2",
+      "9,3",
+      "9,4",
+      "10,0",
+      "10,1",
+      "10,2",
+      "10,3",
+      "10,4",
+      "11,0",
+      "11,1",
+      "11,2",
+      "11,3",
+      "11,4",
+      "11,0",
+      "12,1",
+      "12,2",
+      "12,3",
+      "12,4",
+      "13,0",
+      "13,1",
+      "13,2",
+      "13,3",
+      "13,4"
+    ],
+    "base": "8,0"
+  },
+  "source": {
+    "version": 1,
+    "origin": "builder",
+    "projectId": "20cda3ce-8b7d-434d-a10d-5cae217660b0",
+    "point": {
+      "x": 0,
+      "y": 0
+    },
+    "rotation": "east",
+    "layout": {
+      "rows": 6,
+      "cols": 5
+    }
+  }
+}

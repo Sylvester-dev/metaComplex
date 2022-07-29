@@ -1,0 +1,63 @@
+{
+  "display": {
+    "title": "darkmap",
+    "favicon": "favicon_asset",
+    "navmapThumbnail": "scene-thumbnail.png"
+  },
+  "owner": "",
+  "contact": {
+    "name": "Donkey",
+    "email": ""
+  },
+  "main": "bin/game.js",
+  "tags": [],
+  "scene": {
+    "parcels": [
+      "0,0",
+      "0,1",
+      "0,2",
+      "0,3",
+      "0,4",
+      "1,0",
+      "1,1",
+      "1,2",
+      "1,3",
+      "1,4",
+      "2,0",
+      "2,1",
+      "2,2",
+      "2,3",
+      "2,4",
+      "3,0",
+      "3,1",
+      "3,2",
+      "3,3",
+      "3,4",
+      "4,0",
+      "4,1",
+      "4,2",
+      "4,3",
+      "4,4",
+      "5,0",
+      "5,1",
+      "5,2",
+      "5,3",
+      "5,4"
+    ],
+    "base": "0,0"
+  },
+  "source": {
+    "version": 1,
+    "origin": "builder",
+    "projectId": "c658bdf6-a6aa-4d8b-a58a-3ef38d2e7daa",
+    "point": {
+      "x": 0,
+      "y": 0
+    },
+    "rotation": "east",
+    "layout": {
+      "rows": 6,
+      "cols": 5
+    }
+  }
+}
