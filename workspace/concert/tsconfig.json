@@ -2,16 +2,16 @@
   "compilerOptions": {
     "outFile": "./bin/game.js",
     "allowJs": true,
+    "strict": true,
     "paths": {
-      "eth-connect": [
-        "node_modules/eth-connect/eth-connect.d.ts"
+      "@dcl/ecs-scene-utils": [
+        "node_modules/@dcl/ecs-scene-utils/dist/index.d.ts"
       ]
     },
     "baseUrl": "."
   },
   "include": [
-    "src/**/*.ts",
-    "./node_modules/decentraland-builder-scripts/types.d.ts"
+    "src/**/*.ts"
   ],
   "extends": "./node_modules/decentraland-ecs/types/tsconfig.json",
   "compileOnSave": false

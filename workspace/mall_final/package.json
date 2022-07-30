@@ -14,7 +14,11 @@
     "decentraland-ecs": "latest"
   },
   "dependencies": {
+    "decentraland-builder-scripts": "latest",
     "decentraland-ecs": "latest",
-    "decentraland-builder-scripts": "latest"
-  }
+    "eth-connect": "^6.0.3"
+  },
+  "bundledDependencies": [
+    "eth-connect"
+  ]
 }

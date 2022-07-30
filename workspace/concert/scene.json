@@ -1,0 +1,65 @@
+{
+  "display": {
+    "title": "concert",
+    "favicon": "favicon_asset"
+  },
+  "contact": {
+    "name": "author-name",
+    "email": ""
+  },
+  "owner": "",
+  "scene": {
+    "parcels": [
+
+      "1,8",
+      "1,9",
+      "1,10",
+      "1,11",
+      "2,8",
+      "2,9",
+      "2,10",
+      "2,11",
+      "3,8",
+      "3,9",
+      "3,10",
+      "3,11",
+      "4,8",
+      "4,9",
+      "4,10",
+      "4,11"
+    ],
+    "base": "4,8"
+  },
+  "communications": {
+    "type": "webrtc",
+    "signalling": "https://signalling-01.decentraland.org"
+  },
+  "policy": {
+    "contentRating": "E",
+    "fly": true,
+    "voiceEnabled": true,
+    "blacklist": []
+  },
+  "main": "bin/game.js",
+  "tags": [],
+  "spawnPoints": [
+    {
+      "name": "spawn1",
+      "default": true,
+      "position": {
+        "x": 4,
+        "y": 8,
+        "z": 0
+      },
+      "cameraTarget": {
+        "x": 8,
+        "y": 1,
+        "z": 8
+      }
+    }
+  ],
+  "requiredPermissions": [
+    "ALLOW_TO_TRIGGER_AVATAR_EMOTE"
+  ],
+  "featureToggles": {}
+}

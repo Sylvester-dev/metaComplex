@@ -1,3 +1,4 @@
+import Buy from "./buy"
 
 const _scene = new Entity('_scene')
 engine.addEntity(_scene)
@@ -354,9 +355,6 @@ entity30.addComponentOrReplace(transform31)
 
 
 
-
-
-
 const wwwwwwwwwwwwwww = new Entity('wwwwwwwwwwwwwww')
 engine.addEntity(wwwwwwwwwwwwwww)
 wwwwwwwwwwwwwww.setParent(_scene)
@@ -376,24 +374,83 @@ const blHelmetCF = new Entity('blHelmetCF')
 engine.addEntity(blHelmetCF)
 blHelmetCF.setParent(_scene)
 const transform33 = new Transform({
-  position: new Vector3(69, 0.5, 65),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
+  position: new Vector3(69, -3, 65),// (x,0.5,z) and scale to 5
+  rotation: Quaternion.Euler(0, 180, 0) ,
+  scale: new Vector3(4, 4, 4)
 })
+
+
 blHelmetCF.addComponentOrReplace(transform33)
+
 const gltfShape3 = new GLTFShape("1f762a00-556c-4715-8083-1ea89422d002/BL_Helmet_C11_f.glb")
+
 gltfShape3.withCollisions = true
 gltfShape3.isPointerBlocker = true
 gltfShape3.visible = true
+
+
 blHelmetCF.addComponentOrReplace(gltfShape3)
+
+
+// const show = new Entity()
+// engine.addEntity(show)
+// show.setParent(_scene)
+// show.addComponent(new GLTFShape("asset/show.glb"))
+// show.addComponent(new Transform({
+//   position: new Vector3(65, 0, 63),
+//   rotation: Quaternion.Euler(0, 180, 0),
+//   scale: new Vector3(2,2,2)
+// }))
+// const myText = new TextShape("Check the QR code for more info")
+// show.addComponent(myText)
+// show.getComponent(TextShape).fontSize = 3
+// show.getComponent(TextShape).color = Color3.Black()
+// show.getComponent(TextShape).height = 10
+// show.getComponent(TextShape).width = 8
+// show.addComponent(
+//   new Transform({
+//     position: new Vector3(65, 2, 63)
+//   })
+// )
+
+
+const button = new Entity()
+engine.addEntity(button)
+button.setParent(_scene)
+button.addComponent(new GLTFShape("asset/Button.glb"))
+button.addComponent(new Transform({
+  position: new Vector3(70, 0, 65),
+  scale: new Vector3(5,5,5)
+}))
+button.addComponent((new OnPointerDown((e) => {
+  //log("kjsdbcjk")
+  Buy(2)
+}, { hoverText: 'Buy The Helmet' })))
+
+const button2 = new Entity()
+engine.addEntity(button2)
+button2.setParent(_scene)
+button2.addComponent(new GLTFShape("asset/Button.glb"))
+button2.addComponent(new Transform({
+  position: new Vector3(68, 0, 65),
+  scale: new Vector3(5,5,5)
+}))
+button2.addComponent((new OnPointerDown((e) => {
+  log("kjsdbcjk")
+  openExternalURL("https://testnets.opensea.io/assets/mumbai/0xb4619339d309119892a01f29c8b0afad68f72d71/1")
+
+},{ hoverText: 'Check opensea' })))
+
+
+
 
 const blHelmetCF2 = new Entity('blHelmetCF2')
 engine.addEntity(blHelmetCF2)
 blHelmetCF2.setParent(_scene)
 const transform34 = new Transform({
-  position: new Vector3(69, 0.5, 20),
+  position: new Vector3(69, -3, 20),
   rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
+  scale: new Vector3(4, 4, 4)
 })
 blHelmetCF2.addComponentOrReplace(transform34)
 blHelmetCF2.addComponentOrReplace(gltfShape3)
@@ -402,9 +459,9 @@ const fTeeAtariBlue = new Entity('fTeeAtariBlue')
 engine.addEntity(fTeeAtariBlue)
 fTeeAtariBlue.setParent(_scene)
 const transform35 = new Transform({
-  position: new Vector3(49, 11, 65),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
+  position: new Vector3(49, 6, 60),
+  rotation: Quaternion.Euler(0, 180, 0),
+  scale: new Vector3(4, 4, 4)
 })
 fTeeAtariBlue.addComponentOrReplace(transform35)
 const gltfShape4 = new GLTFShape("95974d29-3345-4c2a-9f6f-54565659239a/F_Tee_Atari_Blue.glb")
@@ -418,8 +475,8 @@ engine.addEntity(fWzWonderbotFeet)
 fWzWonderbotFeet.setParent(_scene)
 const transform36 = new Transform({
   position: new Vector3(49, 1.5, 65),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
+  rotation: Quaternion.Euler(0, 180, 0) ,
+  scale: new Vector3(4, 4, 4)
 })
 fWzWonderbotFeet.addComponentOrReplace(transform36)
 const gltfShape5 = new GLTFShape("8f450895-6d33-464e-be34-c5e096dda52c/F_wz_wonderbot_feet.glb")
@@ -432,8 +489,8 @@ const mTeeAtariBlue = new Entity('mTeeAtariBlue')
 engine.addEntity(mTeeAtariBlue)
 mTeeAtariBlue.setParent(_scene)
 const transform37 = new Transform({
-  position: new Vector3(49, 11, 20),  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
+  position: new Vector3(49, 6, 20),  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(4, 4, 4)
 })
 mTeeAtariBlue.addComponentOrReplace(transform37)
 const gltfShape6 = new GLTFShape("2f60c4bd-8540-4adf-8766-2557cd8482d6/M_Tee_Atari_Blue.glb")
@@ -448,7 +505,7 @@ mWzWonderbotFeet.setParent(_scene)
 const transform38 = new Transform({
   position: new Vector3(49, 1.5, 20),
   rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
+  scale: new Vector3(4, 4, 4)
 })
 mWzWonderbotFeet.addComponentOrReplace(transform38)
 const gltfShape7 = new GLTFShape("c2686e2e-ed28-4d6d-8a39-174037a9a8cc/M_wz_wonderbot_feet.glb")
@@ -461,9 +518,9 @@ const steampunkTrousersFemale = new Entity('steampunkTrousersFemale')
 engine.addEntity(steampunkTrousersFemale)
 steampunkTrousersFemale.setParent(_scene)
 const transform39 = new Transform({
-  position: new Vector3(69, 11, 65),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
+  position: new Vector3(69, 11, 60),
+  rotation: Quaternion.Euler(0, 180, 0) ,
+  scale: new Vector3(4, 4, 4)
 })
 steampunkTrousersFemale.addComponentOrReplace(transform39)
 const gltfShape8 = new GLTFShape("359f0caf-132f-4aad-9b3d-8c371f78dabd/steampunk_trousers_female.glb")
@@ -478,7 +535,7 @@ steampunkTrousersMale.setParent(_scene)
 const transform40 = new Transform({
   position: new Vector3(69, 11, 20),
   rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
+  scale: new Vector3(4, 4, 4)
 })
 steampunkTrousersMale.addComponentOrReplace(transform40)
 const gltfShape9 = new GLTFShape("833c6f89-af44-4e46-b9b8-e31271e77718/steampunk_trousers_male.glb")
@@ -512,3 +569,7 @@ const transform42 = new Transform({
   scale: new Vector3(19.3673095703125, 7.03125, 7.055067710876465)
 })
 windowXGlassPanel3.addComponentOrReplace(transform42)
+
+
+
+
