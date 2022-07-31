@@ -1,0 +1,34 @@
+{
+    "name": "wz_wonderbot_feet Female",
+    "i18n": {
+      "en": "Wonderbot Feet"
+    },
+    "attributes":{
+        "rarity": "mythic",
+        "tags": [
+        "Wonderzone",
+        "Wonderbot",
+        "game",
+        "feet",
+        "fashion",
+        "robot",
+        "cyber"
+     ]
+    },
+    "image":"https://gateway.pinata.cloud/ipfs/QmZUoKXsTux9gFBouoQHJEMxTQKHMS7YTjHhhr5tGwyN8p/wz_wonderbot_feet_f.png",
+    "animation_url":"https://gateway.pinata.cloud/ipfs/QmXskoEj3aeBs1p1VkNqsFhZYqUQje7bsRRtiMA3KuUQoU/F_wz_wonderbot_feet.glb",
+  
+    "description": "Robotic feet, giving you an extra spring in your step. Wonderzone Collection 2020. Created by Chestnutbruze",
+    
+     "replaces": [],
+     "hides": [],
+    "category": "feet",
+    "main": [
+
+                {   
+                    "type": "BaseFemale", 
+                    "model": "https://gateway.pinata.cloud/ipfs/QmXskoEj3aeBs1p1VkNqsFhZYqUQje7bsRRtiMA3KuUQoU/F_wz_wonderbot_feet.glb"
+                }
+        ]
+}
+  

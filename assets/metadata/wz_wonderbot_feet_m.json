@@ -1,0 +1,35 @@
+{
+    "name": "wz_wonderbot_feet male",
+    "i18n": {
+      "en": "Wonderbot Feet"
+    },
+    
+    "description": "Robotic feet, giving you an extra spring in your step. Wonderzone Collection 2020. Created by Chestnutbruze",
+    "attributes":{
+        "tags": [
+            "Wonderzone",
+            "Wonderbot",
+            "game",
+            "feet",
+            "fashion",
+            "robot",
+            "cyber"
+         ],
+         "rarity": "mythic"
+    },
+    "image":"https://gateway.pinata.cloud/ipfs/QmZUoKXsTux9gFBouoQHJEMxTQKHMS7YTjHhhr5tGwyN8p/wz_wonderbot_feet_m.png",
+    "animation_url":"https://gateway.pinata.cloud/ipfs/QmXskoEj3aeBs1p1VkNqsFhZYqUQje7bsRRtiMA3KuUQoU/M_wz_wonderbot_feet.glb",
+  
+     "replaces": [],
+     "hides": [],
+    "category": "feet",
+    "main": [
+                {
+                    "type": "BaseMale", 
+                    "model": "https://gateway.pinata.cloud/ipfs/QmXskoEj3aeBs1p1VkNqsFhZYqUQje7bsRRtiMA3KuUQoU/M_wz_wonderbot_feet.glb",
+                    "overrideReplaces": [],
+                    "overrideHides": []
+                }
+        ]
+}
+  

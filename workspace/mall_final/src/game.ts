@@ -1,4 +1,6 @@
 import Buy from "./buy"
+import getMG from "./getMG"
+
 
 const _scene = new Entity('_scene')
 engine.addEntity(_scene)
@@ -352,9 +354,6 @@ entity30.addComponentOrReplace(transform31)
 
 
 
-
-
-
 const wwwwwwwwwwwwwww = new Entity('wwwwwwwwwwwwwww')
 engine.addEntity(wwwwwwwwwwwwwww)
 wwwwwwwwwwwwwww.setParent(_scene)
@@ -424,8 +423,8 @@ button.addComponent(new Transform({
 }))
 button.addComponent((new OnPointerDown((e) => {
   //log("kjsdbcjk")
-  Buy(2)
-}, { hoverText: 'Buy The Helmet' })))
+  Buy(8,10)
+}, { hoverText: 'Buy The Female Helmet' })))
 
 const button2 = new Entity()
 engine.addEntity(button2)
@@ -437,7 +436,7 @@ button2.addComponent(new Transform({
 }))
 button2.addComponent((new OnPointerDown((e) => {
   log("kjsdbcjk")
-  openExternalURL("https://testnets.opensea.io/assets/mumbai/0xb4619339d309119892a01f29c8b0afad68f72d71/1")
+  openExternalURL("https://testnets.opensea.io/assets/mumbai/0x8df8c41a4a84f5f9257a019e1d31c16808709d35/8")
 
 },{ hoverText: 'Check opensea' })))
 
@@ -455,11 +454,42 @@ const transform34 = new Transform({
 blHelmetCF2.addComponentOrReplace(transform34)
 blHelmetCF2.addComponentOrReplace(gltfShape3)
 
+
+
+const button3 = new Entity()
+engine.addEntity(button3)
+button3.setParent(_scene)
+button3.addComponent(new GLTFShape("asset/Button.glb"))
+button3.addComponent(new Transform({
+  position: new Vector3(70, 0, 20),
+  scale: new Vector3(5,5,5)
+}))
+button3.addComponent((new OnPointerDown((e) => {
+  //log("kjsdbcjk")
+  Buy(7,10)
+}, { hoverText: 'Buy The Male Helmet' })))
+
+const button4 = new Entity()
+engine.addEntity(button4)
+button4.setParent(_scene)
+button4.addComponent(new GLTFShape("asset/Button.glb"))
+button4.addComponent(new Transform({
+  position: new Vector3(68, 0, 20),
+  scale: new Vector3(5,5,5)
+}))
+button4.addComponent((new OnPointerDown((e) => {
+  
+  openExternalURL("https://testnets.opensea.io/assets/mumbai/0x8df8c41a4a84f5f9257a019e1d31c16808709d35/7")
+
+},{ hoverText: 'Check opensea' })))
+
+
+
 const fTeeAtariBlue = new Entity('fTeeAtariBlue')
 engine.addEntity(fTeeAtariBlue)
 fTeeAtariBlue.setParent(_scene)
 const transform35 = new Transform({
-  position: new Vector3(49, 6, 60),
+  position: new Vector3(49, 7, 60),
   rotation: Quaternion.Euler(0, 180, 0),
   scale: new Vector3(4, 4, 4)
 })
@@ -470,11 +500,41 @@ gltfShape4.isPointerBlocker = true
 gltfShape4.visible = true
 fTeeAtariBlue.addComponentOrReplace(gltfShape4)
 
+
+
+const button5 = new Entity()
+engine.addEntity(button5)
+button5.setParent(_scene)
+button5.addComponent(new GLTFShape("asset/Button.glb"))
+button5.addComponent(new Transform({
+  position: new Vector3(50, 9, 60),
+  scale: new Vector3(5,5,5)
+}))
+button5.addComponent((new OnPointerDown((e) => {
+  //log("kjsdbcjk")
+  Buy(11,10)
+}, { hoverText: 'Buy The Female Tshirt' })))
+
+const button6 = new Entity()
+engine.addEntity(button6)
+button6.setParent(_scene)
+button6.addComponent(new GLTFShape("asset/Button.glb"))
+button6.addComponent(new Transform({
+  position: new Vector3(48, 9, 60),
+  scale: new Vector3(5,5,5)
+}))
+button6.addComponent((new OnPointerDown((e) => {
+  openExternalURL("https://testnets.opensea.io/assets/mumbai/0x8df8c41a4a84f5f9257a019e1d31c16808709d35/11")
+
+},{ hoverText: 'Check opensea' })))
+
+
+
 const fWzWonderbotFeet = new Entity('fWzWonderbotFeet')
 engine.addEntity(fWzWonderbotFeet)
 fWzWonderbotFeet.setParent(_scene)
 const transform36 = new Transform({
-  position: new Vector3(49, 1.5, 65),
+  position: new Vector3(49, 3.5, 65),
   rotation: Quaternion.Euler(0, 180, 0) ,
   scale: new Vector3(4, 4, 4)
 })
@@ -485,11 +545,40 @@ gltfShape5.isPointerBlocker = true
 gltfShape5.visible = true
 fWzWonderbotFeet.addComponentOrReplace(gltfShape5)
 
+
+const button7 = new Entity()
+engine.addEntity(button7)
+button7.setParent(_scene)
+button7.addComponent(new GLTFShape("asset/Button.glb"))
+button7.addComponent(new Transform({
+  position: new Vector3(50, 0, 65),
+  scale: new Vector3(5,5,5)
+}))
+button7.addComponent((new OnPointerDown((e) => {
+  //log("kjsdbcjk")
+  Buy(4,10)
+}, { hoverText: 'Buy The Female Shoes' })))
+
+const button8 = new Entity()
+engine.addEntity(button8)
+button8.setParent(_scene)
+button8.addComponent(new GLTFShape("asset/Button.glb"))
+button8.addComponent(new Transform({
+  position: new Vector3(48, 0, 65),
+  scale: new Vector3(5,5,5)
+}))
+button8.addComponent((new OnPointerDown((e) => {
+  log("kjsdbcjk")
+  openExternalURL("https://testnets.opensea.io/assets/mumbai/0x8df8c41a4a84f5f9257a019e1d31c16808709d35/4")
+
+},{ hoverText: 'Check opensea' })))
+
+
 const mTeeAtariBlue = new Entity('mTeeAtariBlue')
 engine.addEntity(mTeeAtariBlue)
 mTeeAtariBlue.setParent(_scene)
 const transform37 = new Transform({
-  position: new Vector3(49, 6, 20),  rotation: new Quaternion(0, 0, 0, 1),
+  position: new Vector3(49, 7, 20),  rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(4, 4, 4)
 })
 mTeeAtariBlue.addComponentOrReplace(transform37)
@@ -499,11 +588,41 @@ gltfShape6.isPointerBlocker = true
 gltfShape6.visible = true
 mTeeAtariBlue.addComponentOrReplace(gltfShape6)
 
+
+const button9 = new Entity()
+engine.addEntity(button9)
+button9.setParent(_scene)
+button9.addComponent(new GLTFShape("asset/Button.glb"))
+button9.addComponent(new Transform({
+  position: new Vector3(50, 9, 22),
+  scale: new Vector3(5,5,5)
+}))
+button9.addComponent((new OnPointerDown((e) => {
+  //log("kjsdbcjk")
+  Buy(13,10)
+}, { hoverText: 'Buy The Tshirt Men' })))
+
+const button10 = new Entity()
+engine.addEntity(button10)
+button10.setParent(_scene)
+button10.addComponent(new GLTFShape("asset/Button.glb"))
+button10.addComponent(new Transform({
+  position: new Vector3(48, 9, 22),
+  scale: new Vector3(5,5,5)
+}))
+button10.addComponent((new OnPointerDown((e) => {
+  log("kjsdbcjk")
+  openExternalURL("https://testnets.opensea.io/assets/mumbai/0x8df8c41a4a84f5f9257a019e1d31c16808709d35/13")
+
+},{ hoverText: 'Check opensea' })))
+
+
+
 const mWzWonderbotFeet = new Entity('mWzWonderbotFeet')
 engine.addEntity(mWzWonderbotFeet)
 mWzWonderbotFeet.setParent(_scene)
 const transform38 = new Transform({
-  position: new Vector3(49, 1.5, 20),
+  position: new Vector3(49, 3.5, 20),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(4, 4, 4)
 })
@@ -513,6 +632,37 @@ gltfShape7.withCollisions = true
 gltfShape7.isPointerBlocker = true
 gltfShape7.visible = true
 mWzWonderbotFeet.addComponentOrReplace(gltfShape7)
+
+
+
+const button11 = new Entity()
+engine.addEntity(button11)
+button11.setParent(_scene)
+button11.addComponent(new GLTFShape("asset/Button.glb"))
+button11.addComponent(new Transform({
+  position: new Vector3(50, 0, 22),
+  scale: new Vector3(5,5,5)
+}))
+button11.addComponent((new OnPointerDown((e) => {
+  //log("kjsdbcjk")
+  Buy(3,10)
+}, { hoverText: 'Buy The Male Shoes' })))
+
+const button12 = new Entity()
+engine.addEntity(button12)
+button12.setParent(_scene)
+button12.addComponent(new GLTFShape("asset/Button.glb"))
+button12.addComponent(new Transform({
+  position: new Vector3(48, 0, 22),
+  scale: new Vector3(5,5,5)
+}))
+button12.addComponent((new OnPointerDown((e) => {
+  log("kjsdbcjk")
+  openExternalURL("https://testnets.opensea.io/assets/mumbai/0x8df8c41a4a84f5f9257a019e1d31c16808709d35/3")
+
+},{ hoverText: 'Check opensea' })))
+
+
 
 const steampunkTrousersFemale = new Entity('steampunkTrousersFemale')
 engine.addEntity(steampunkTrousersFemale)
@@ -529,6 +679,39 @@ gltfShape8.isPointerBlocker = true
 gltfShape8.visible = true
 steampunkTrousersFemale.addComponentOrReplace(gltfShape8)
 
+
+
+const button13 = new Entity()
+engine.addEntity(button13)
+button13.setParent(_scene)
+button13.addComponent(new GLTFShape("asset/Button.glb"))
+button13.addComponent(new Transform({
+  position: new Vector3(68, 9, 60),
+  scale: new Vector3(5,5,5)
+}))
+button13.addComponent((new OnPointerDown((e) => {
+  //log("kjsdbcjk")
+  Buy(6,10)
+}, { hoverText: 'Buy The Steampunk female Trousers' })))
+
+const button14 = new Entity()
+engine.addEntity(button14)
+button14.setParent(_scene)
+button14.addComponent(new GLTFShape("asset/Button.glb"))
+button14.addComponent(new Transform({
+  position: new Vector3(70, 9, 60),
+  scale: new Vector3(5,5,5)
+}))
+button14.addComponent((new OnPointerDown((e) => {
+  log("kjsdbcjk")
+  openExternalURL("https://testnets.opensea.io/assets/mumbai/0x8df8c41a4a84f5f9257a019e1d31c16808709d35/6")
+
+},{ hoverText: 'Check opensea' })))
+
+
+
+
+
 const steampunkTrousersMale = new Entity('steampunkTrousersMale')
 engine.addEntity(steampunkTrousersMale)
 steampunkTrousersMale.setParent(_scene)
@@ -543,6 +726,35 @@ gltfShape9.withCollisions = true
 gltfShape9.isPointerBlocker = true
 gltfShape9.visible = true
 steampunkTrousersMale.addComponentOrReplace(gltfShape9)
+
+
+
+const button15 = new Entity()
+engine.addEntity(button15)
+button15.setParent(_scene)
+button15.addComponent(new GLTFShape("asset/Button.glb"))
+button15.addComponent(new Transform({
+  position: new Vector3(70, 9, 22),
+  scale: new Vector3(5,5,5)
+}))
+button15.addComponent((new OnPointerDown((e) => {
+  //log("kjsdbcjk")
+  Buy(5,10)
+}, { hoverText: 'Buy The Steampunk Male Trouser' })))
+
+const button16 = new Entity()
+engine.addEntity(button16)
+button16.setParent(_scene)
+button16.addComponent(new GLTFShape("asset/Button.glb"))
+button16.addComponent(new Transform({
+  position: new Vector3(68, 9, 22),
+  scale: new Vector3(5,5,5)
+}))
+button16.addComponent((new OnPointerDown((e) => {
+  log("kjsdbcjk")
+  openExternalURL("https://testnets.opensea.io/assets/mumbai/0x8df8c41a4a84f5f9257a019e1d31c16808709d35/5")
+
+},{ hoverText: 'Check opensea' })))
 
 const windowXGlassPanel2 = new Entity('windowXGlassPanel2')
 engine.addEntity(windowXGlassPanel2)
@@ -572,4 +784,16 @@ windowXGlassPanel3.addComponentOrReplace(transform42)
 
 
 
-
+const buttonmg = new Entity()
+engine.addEntity(buttonmg)
+buttonmg.setParent(_scene)
+buttonmg.addComponent(new GLTFShape("asset/Button.glb"))
+buttonmg.addComponent(new Transform({
+  position: new Vector3(8, -0.25, 10),
+  scale: new Vector3(8,5,5)
+}))
+buttonmg.addComponent((new OnPointerDown((e) => {
+  //log("kjsdbcjk")
+  getMG()
+  
+}, { hoverText: 'get MG Coins' })))

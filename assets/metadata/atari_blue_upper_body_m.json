@@ -1,0 +1,40 @@
+{
+  "name": "T-Shirt Men Atari",
+  "i18n": {
+    "en": "Blue Atari Tee"
+  },
+  
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "https://gateway.pinata.cloud/ipfs/QmXskoEj3aeBs1p1VkNqsFhZYqUQje7bsRRtiMA3KuUQoU/M_Tee_Atari_Blue.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "animation_url": "https://gateway.pinata.cloud/ipfs/QmXskoEj3aeBs1p1VkNqsFhZYqUQje7bsRRtiMA3KuUQoU/M_Tee_Atari_Blue.glb",
+  "image":"https://gateway.pinata.cloud/ipfs/QmZUoKXsTux9gFBouoQHJEMxTQKHMS7YTjHhhr5tGwyN8p/atari_blue_upper_body_m.png",
+  "description": "Atari's signature logo on a blue tee.",
+  "attributes": {
+    "rarity": "epic",
+    "tags": [
+      "T-Shirt",
+      "atari",
+      "tshirt",
+      "shirt",
+      "tee",
+      "retro",
+      "upper",
+      "gamer",
+      "blue"
+     ]
+  }
+}
