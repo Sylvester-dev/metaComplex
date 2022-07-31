@@ -8,15 +8,6 @@ base.addComponent(new Transform({
 engine.addEntity(base)
 
 
-const platform1 = new Entity()
-platform1.addComponent(new GLTFShape('models/platform.glb'))
-platform1.addComponent(
-  new Transform({
-    position: new Vector3(-48, 5, 0),
-    scale: new Vector3(2, 1, 2)
-  })
-)
-engine.addEntity(platform1)
 
 // Seating
 const seat = new Entity()
