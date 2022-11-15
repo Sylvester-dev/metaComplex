@@ -1,5 +1,5 @@
-   ## MetaGrid
-    Ecommerce (Speed + Convenience) + Physical Retail (Personalization + Experience) = MetaGrid Commerce
+   ## MetaComplex
+    Ecommerce (Speed + Convenience) + Physical Retail (Personalization + Experience) = MetaComplex Commerce
     
    ## Features: 
     - Buy and sell item 
@@ -72,7 +72,7 @@ MGcoinContract = "0x514066a543d8Df91680b140d1d5190396cA37Eeb"
 VirtualWarranty = "0x1bCD612f4AA65daB8acB5421705AB4C586313D9A"
 ```
 
-## MetaGrid Video
+## MetaComplex Video
 https://drive.google.com/file/d/1-BvOscu0QGOGPIe_K23YvIo6K7IlehKT/view?usp=sharing
 ## AR Scanner Video tutorial
 https://drive.google.com/file/d/1fB_AzD7LMeIPjINjm_hUMI-rYnIJpAmk/view?usp=sharing
