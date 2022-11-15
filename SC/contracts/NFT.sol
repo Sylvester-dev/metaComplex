@@ -22,6 +22,7 @@ contract NFT is ERC721URIStorage {
         contractAddress = marketPlaceAddress;
     }
 
+// Minting MG token
     function createToken(string memory tokenURI) public returns (uint256) {
         _tokenIds.increment();
         uint256 newTokenId = _tokenIds.current();
