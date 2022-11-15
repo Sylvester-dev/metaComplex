@@ -1,6 +1,6 @@
 # ar_scanner
 
-A new Flutter project.
+A Flutter project to scan QR and show products.
 
 ## Getting Started
 
