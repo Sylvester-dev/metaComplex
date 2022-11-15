@@ -11,3 +11,5 @@ GAS_REPORT=true npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.js
 ```
+
+The warranty contract helps seller to provide virtual warranty on products in form of NFT's that get destroyed as warranty period of product is completed.
