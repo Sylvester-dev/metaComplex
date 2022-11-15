@@ -7,11 +7,11 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
-// Create a Marketplace Smart contract to buy and sell NFT with your custom ERC20 token.
+// Created a Marketplace Smart contract to buy and sell NFT with your custom ERC20 token.
 // The candidate can use the standard library if needed.
 // Functionalities:
 // Buy, Sell, and Mint NFT
-// Create 3 different SC For ERC20, ERC721, and Marketplace.
+// Has created 3 different SC For ERC20, ERC721, and Marketplace.
 contract NFTMarket is ReentrancyGuard {
     address public mgTokenAddress;
     address payable owner;
